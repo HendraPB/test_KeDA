@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="keda_material_tree_view" model="ir.ui.view">
+        <field name="name">keda.material.tree</field>
+        <field name="model">keda.material</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="buy_price"/>
+                <field name="supplier_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="keda_material_search_view" model="ir.ui.view">
+        <field name="name">keda.material.search</field>
+        <field name="model">keda.material</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <filter name="type" string="Fabric" domain="[('type', '=', 'fabric')]"/>
+                <filter name="type" string="Jeans" domain="[('type', '=', 'jeans')]"/>
+                <filter name="type" string="Cotton" domain="[('type', '=', 'cotton')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="keda_material_from_view" model="ir.ui.view">
+        <field name="name">keda.material.form</field>
+        <field name="model">keda.material</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="buy_price"/>
+                        <field name="supplier_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

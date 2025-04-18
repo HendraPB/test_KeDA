@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_material" model="ir.actions.act_window">
+        <field name="name">Materials</field>
+        <field name="res_model">keda.material</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="keda_material_search_view"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Material not available
+            </p>
+            <p>Add Material</p>
+        </field>
+    </record>
+
+    <record id="action_supplier" model="ir.actions.act_window">
+        <field name="name">Suppliers</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Supplier not available
+            </p>
+            <p>Add Supplier</p>
+        </field>
+    </record>
+
+    <menuitem id="keda_0"
+              name="Test KeDA"
+              sequence="1"/>
+
+    <menuitem id="keda_menu_1"
+              name="Menu"
+              parent="keda_0"
+              sequence="1"/>
+
+    <menuitem id="keda_material"
+              name="Materials"
+              parent="keda_menu_1"
+              action="action_material"
+              sequence="1"/>
+
+    <menuitem id="keda_supplier"
+              name="Suppliers"
+              parent="keda_menu_1"
+              action="action_supplier"
+              sequence="2"/>
+</odoo>
