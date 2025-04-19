@@ -2,7 +2,7 @@
 Test Odoo with topic material CRUD
 
 ## ERD
-![ERD](demos/ERD_test_KeDA.png)
+![ERD](demos/Test_KeDA_ERD.png)
 
 ## Postman Collection
 [postman_collection.json](demos/Test_KeDA.postman_collection.json)
