@@ -5,4 +5,4 @@ Test Odoo with topic material CRUD
 ![ERD](ERD_test_KeDA.png)
 
 ## Postman Collection
-[a relative link](Test_KeDA.postman_collection.json)
+[postman_collection.json](Test_KeDA.postman_collection.json)
